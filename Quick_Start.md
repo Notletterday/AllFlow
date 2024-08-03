@@ -26,5 +26,16 @@ apt install gcc
 然后安装其他依赖库
 
 ```bash
-sudo apt install 1ibopenblas-dev liblapack-dev 1ibarpack2-dev 1ibsuper1u-dev
+sudo apt update
+sudo apt install libopenblas-dev liblapack-dev libarpack2-dev libsuperlu-dev
+
+wget https://sourceforge.net/projects/arma/files/armadillo-14.0.1.tar.xz
+tar -xf armadillo-14.0.1.tar.xz
+rm armadillo-14.0.1.tar.xz
+cd armadillo-14.0.1
+mkdir build
+cd build
+cmake -DCMAKE_BUILD_TYPE=Release ..
+make -j8
+sudo make install
 ```
