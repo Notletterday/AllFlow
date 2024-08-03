@@ -39,3 +39,6 @@ cmake -DCMAKE_BUILD_TYPE=Release ..
 make -j8
 sudo make install
 ```
+然后我就直接用run coder了，之前用cpp刷leetcode多，开发不多，继续学怎么用xmake吧。
+
+
