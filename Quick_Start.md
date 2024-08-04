@@ -34,10 +34,25 @@ sudo apt install libarmadillo-dev
 #这个需要手动编译一下
 sudo apt install libgtest-dev
 cd /usr/src/gtest
-sudo cmake .
+mkdir build 
+cd build
+sudo cmake ..
 sudo make
-sudo cp lib/*.a /usr/lib
 ```
-然后我就直接用run coder了，之前用cpp刷leetcode多，开发不多，继续学怎么用xmake吧。
+然后测试gtest:
+```bash
+mkdir build
+cd build
+sudo cmake ..
+sudo make
+#运行gtest的测试代码
+./gtest_exe
+```
 
+vscode的扩展(选择性使用)
+- C/C++
+- C/C++ Extension Pack
+- clangd
+- CMake
+- CMake Tools
 
